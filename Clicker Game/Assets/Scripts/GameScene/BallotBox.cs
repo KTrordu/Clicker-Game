@@ -32,7 +32,7 @@ public class BallotBox : MonoBehaviour, IPointerClickHandler
     #endregion
 
     /// <summary>
-    /// Initialize the GameManager GameObject
+    /// Initialize the GameManager GameObject.
     /// </summary>
     void Start()
     {
@@ -47,7 +47,7 @@ public class BallotBox : MonoBehaviour, IPointerClickHandler
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            Debug.Log("Ballot box left-clicked! Adding votes.");
+            if (debugMode) Debug.Log("Ballot box left-clicked! Adding votes.");
             gameManager.GetComponent<GameManager>().IncreasePlayerVotes(voteToAdd);
         }
     }

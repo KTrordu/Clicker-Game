@@ -46,9 +46,12 @@ public class TimeManager : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (debugMode) Debug.Log("1 frame passed.");
-
         totalTimePassed += Time.deltaTime;
         timeText.text = $"Time Passed: {Mathf.FloorToInt(totalTimePassed)}";
     }
+
+    /// <summary>
+    /// Gets the time passed since the game started.
+    /// </summary>
+    public int GetTimePassed() => Mathf.FloorToInt(totalTimePassed);
 }

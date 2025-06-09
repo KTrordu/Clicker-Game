@@ -109,12 +109,12 @@ public class GameManager : MonoBehaviour
         if (gameState == GameState.WON)
         {
             // TODO: Add win logic (e.g. show win screen, play animation)
-            Debug.Log("You won the game!");
+            if (debugMode) Debug.Log("You won the game!");
         }
         else if (gameState == GameState.LOST)
         {
             // TODO: Add lose logic (e.g. show lose screen, disable controls)
-            Debug.Log("You lost the game!");
+            if (debugMode) Debug.Log("You lost the game!");
         }
     }
 }
