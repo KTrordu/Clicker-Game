@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    #region UNITY METHODS
+
     /// <summary>
     /// Initializes the UI at game start.
     /// </summary>
@@ -62,17 +64,9 @@ public class GameManager : MonoBehaviour
         ControlVotes();
     }
 
-    /// <summary>
-    /// Increases the player's vote count by the given amount.
-    /// </summary>
-    /// <param name="amount">Number of votes to add.</param>
-    public void IncreasePlayerVotes(int amount) => playerVotes += amount;
+    #endregion
 
-    /// <summary>
-    /// Increases the opponent's vote count by the given amount.
-    /// </summary>
-    /// <param name="amount">Number of votes to add.</param>
-    public void IncreaseOpponentVotes(int amount) => opponentVotes += amount;
+    #region UI Methods
 
     /// <summary>
     /// Updates the UI elements to reflect current vote counts.
@@ -83,6 +77,10 @@ public class GameManager : MonoBehaviour
         playerVotesText.text = $"Your Votes: {playerVotes}";
         opponentVotesText.text = $"Their Votes: {opponentVotes}";
     }
+
+    #endregion
+
+    #region UTILITY METHODS
 
     /// <summary>
     /// Checks if the player or opponent has reached the winning condition.
@@ -117,4 +115,33 @@ public class GameManager : MonoBehaviour
             if (debugMode) Debug.Log("You lost the game!");
         }
     }
+
+    #endregion
+
+    #region PUBLIC METHODS
+
+    /// <summary>
+    /// Increases the player's vote count by the given amount.
+    /// </summary>
+    /// <param name="amount">Number of votes to add.</param>
+    public void IncreasePlayerVotes(int amount) => playerVotes += amount;
+
+    /// <summary>
+    /// Decreases the player's vote count by the given amount.
+    /// </summary>
+    /// <param name="amount">Number of votes to remove.</param>
+    public void DecreasePlayerVotes(int amount) => playerVotes -= amount;
+
+    /// <summary>
+    /// Increases the opponent's vote count by the given amount.
+    /// </summary>
+    /// <param name="amount">Number of votes to add.</param>
+    public void IncreaseOpponentVotes(int amount) => opponentVotes += amount;
+
+    /// <summary>
+    /// Gets the player's votes.
+    /// </summary>
+    public int GetPlayerVotes() => playerVotes;
+    
+    #endregion
 }
