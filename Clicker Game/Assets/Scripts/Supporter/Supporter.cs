@@ -137,7 +137,7 @@ public class Supporter : MonoBehaviour
         if (debugMode)
         {
             if (success) Debug.Log($"Successfully bought {supporterData.supporterName}!");
-            else Debug.Log($"Failed to buy {supporterData.supporterName} - not enough money");
+            else Debug.Log($"Failed to buy {supporterData.supporterName}.");
         }
     }
 

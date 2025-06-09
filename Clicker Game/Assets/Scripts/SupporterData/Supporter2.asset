@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a9ac399b7430af47a8ea82728283feb, type: 3}
-  m_Name: Supporter1
+  m_Name: Supporter2
   m_EditorClassIdentifier: 
-  supporterName: Supporter1
-  supporterDescription: The first supporter.
-  supporterSprite: {fileID: 21300000, guid: a84eb264169241e45ac4d67f157fdf31, type: 3}
-  supporterCost: 100
-  supporterVotePerSecond: 10
-  maxSupporterCount: 50
+  supporterName: Supporter2
+  supporterDescription: The second supporter.
+  supporterSprite: {fileID: 4562498478281125029, guid: ddcdb4acc485c4f47b0384db224face5, type: 3}
+  supporterCost: 1000
+  supporterVotePerSecond: 35
+  maxSupporterCount: 30
