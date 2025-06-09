@@ -17,6 +17,12 @@ public class GameManager : MonoBehaviour
 {
     #region VARIABLES
 
+    /// <summary>
+    /// Enables or disables the Debug mode.
+    /// </summary>
+    [Header("Debugging"), Tooltip("Enables or disables the Debug mode for logging.")]
+    public bool debugMode = false;
+
     [Header("Vote Numbers")]
     [Tooltip("Represents the total number of voters in the country.")]
     public int totalVotes;

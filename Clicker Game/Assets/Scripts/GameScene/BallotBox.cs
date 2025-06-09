@@ -13,8 +13,15 @@ public class BallotBox : MonoBehaviour, IPointerClickHandler
     #region VARIABLES
 
     /// <summary>
+    /// Enables or disables the Debug mode.
+    /// </summary>
+    [Header("Debugging"), Tooltip("Enables or disables the Debug mode for logging.")]
+    public bool debugMode = false;
+
+    /// <summary>
     /// Represents the number of votes acquired by the player when clicking the ballot box.
     /// </summary>
+    [Header("Voting"), Tooltip("Number of votes to add when the ballot box is clicked.")]
     private int voteToAdd = 1;
 
     /// <summary>
