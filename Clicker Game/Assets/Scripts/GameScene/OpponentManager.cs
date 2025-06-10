@@ -1,4 +1,4 @@
-// Author: Alptuð Yýlmaz
+// Author: AlptuÄŸ YÄ±lmaz
 // Date: 09.06.2025
 // Description: Manages the core opponent logic in the GameScene, including vote tracking and UI updates.
 
@@ -49,7 +49,7 @@ public class OpponentManager : MonoBehaviour
     private void IncreaseOppenentVote()
     {
         int timePassed = timeManager.GetComponent<TimeManager>().GetTimePassed();
-        int voteToAdd = Random.Range(1, 10) * Mathf.FloorToInt(timePassed);
+        int voteToAdd = Random.Range(7, 15) * Mathf.FloorToInt(timePassed);
         if (debugMode) Debug.Log($"Increasing opponent votes by {voteToAdd} based on time passed: {timePassed} seconds.");
         gameManager.GetComponent<GameManager>().IncreaseOpponentVotes(voteToAdd);
     }
