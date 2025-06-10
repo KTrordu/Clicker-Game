@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ddcdb4acc485c4f47b0384db224face5
+guid: 96e50fbe41180c64ea84f5b1264a4696
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4562498478281125029
-    second: Supporter2_0
+      213: 8054656822731781424
+    second: Megaphone_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Supporter2_0
+      name: Megaphone_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 40
-        height: 40
+        x: 12
+        y: 18
+        width: 150
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ace43e5130415f30800000000000000
-      internalID: 4562498478281125029
+      spriteID: 035ba9274b3e7cf60800000000000000
+      internalID: 8054656822731781424
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Supporter2_0: 4562498478281125029
+      Megaphone_0: 8054656822731781424
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
